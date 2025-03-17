@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('mc-ten-lowercase-alt.ttf') format('truetype');
+}
+
+body {
+    background-color: black; /* Чёрный фон */
+    color: white; /* Белый текст */
+    font-family: 'Minecraft', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    text-shadow: 3px 3px 5px black;
+}
+
+p, span, div, a {
+    color: white !important;
+}
+
+/* Стили для кнопок */
+.minecraft-btn {
+    background-color: #4fa356; /* Красный фон кнопки */
+    color: white; /* Белый текст */
+    border: 2px solid white; /* Белая рамка */
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Minecraft', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block; /* Чтобы кнопки шли в ряд */
+    text-transform: uppercase; /* Заглавные буквы */
+    box-shadow: 3px 3px 5px black;
+    transition: 0.3s;
+}
+
+.minecraft-btn:hover {
+    background-color: rgb(138, 185, 132);
+    color: #ffffff;
+}
