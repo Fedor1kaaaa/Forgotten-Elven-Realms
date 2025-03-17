@@ -42,3 +42,9 @@ p, span, div, a {
     background-color: rgb(138, 185, 132);
     color: #ffffff;
 }
+body {
+    background-image: url('background.jpg'); /* Если картинка в той же папке */
+    background-size: cover; /* Растягивает картинку на весь экран */
+    background-position: center; /* Выравнивает по центру */
+    background-attachment: fixed; /* Фон остается неподвижным */
+}
