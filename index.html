@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Server</title>
+    <title>FER - Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 class="welcome-text">Добро пожаловать в FER!</h1>
-    <button class="minecraft-btn" onclick="showServerInfo()">Войти на сервер</button>
-
-    <div id="server-info">
-        <p>IP: <span class="highlight">FERSR.aternos.me</span></p>
-        <p>PORT: <span class="highlight">34148</span></p>
+    <div class="container">
+        <h1 class="welcome-text">Добро пожаловать в FER!</h1>
+        <a href="minecraft://?addExternalServer=FER|IP:PORT" class="server-button">Зайти на сервер</a>
+        <p class="server-info">IP: <span>your.ip.address</span> | Порт: <span>19132</span></p>
     </div>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
