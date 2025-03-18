@@ -87,3 +87,7 @@ body {
 .donate-btn:hover {
     background-color: #FFC107; /* Чуть темнее при наведении */
 }
+body {
+    background: url('your-background.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
