@@ -1,5 +1,10 @@
 function showServerInfo() {
-    var serverInfo = document.getElementById("server-info");
-    serverInfo.style.opacity = "1"; // Делаем блок видимым
-    serverInfo.style.transform = "translateY(0)"; // Убираем сдвиг вверх
+    let info = document.getElementById("server-info");
+    info.style.display = "block";
+    info.style.opacity = "0";
+    info.style.transition = "opacity 0.5s ease-in-out";
+    
+    setTimeout(() => {
+        info.style.opacity = "1";
+    }, 100);
 }
