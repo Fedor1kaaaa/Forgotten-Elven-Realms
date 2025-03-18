@@ -58,3 +58,18 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+#telegramBtn {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Сдвигаем левее */
+    margin-top: 10px; /* Сдвигаем ниже */
+}
+
+#telegramBtn:hover {
+    background-color: #0077b5;
+}
