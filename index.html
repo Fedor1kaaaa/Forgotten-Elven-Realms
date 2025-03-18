@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgotten Elven Realms</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Иконка вкладки -->
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Добро пожаловать в FER!</h1>
-        <button class="minecraft-btn" onclick="showServerInfo()">Войти на сервер</button>
-        <div id="server-info" class="server-info">
-            <a href="https://t.me/+E0plaEJ7_Gc1YTQy" target="_blank">
-    <button id="telegramBtn">Наш Telegram</button>
-</a>
-            <p>FERSR.aternos.me</p>
-            <p>Порт: 34138</p>
-        </div>
+    <h1 class="welcome">Добро пожаловать!</h1>
+    <button id="server-btn">Войти на сервер</button>
+    <div id="server-info">
+        <p id="ip">IP: 123.456.789.000</p>
+        <p id="port">Порт: 19132</p>
     </div>
+    <button id="telegram-btn" onclick="location.href='https://t.me/yourchannel'">Telegram</button>
+
     <script src="script.js"></script>
 </body>
 </html>
