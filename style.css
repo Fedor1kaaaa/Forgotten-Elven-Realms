@@ -63,3 +63,15 @@ h1 {
     background: #cc7700;
     box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.8);
 }
+body {
+    background-color: black; /* Чёрный фон */
+    background-image: url("background.jpg"); /* Если хочешь картинку */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Белый текст */
+    font-family: "Minecraft", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
