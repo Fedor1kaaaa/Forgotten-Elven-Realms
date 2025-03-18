@@ -1,56 +1,52 @@
 @font-face {
-    font-family: 'Minecraft Ten';
-    src: url('mc-ten-lowercase-alt.ttf') format('truetype');
+    font-family: 'MinecraftTen';
+    src: url('mc-ten-lowercase-alt.ttf');
 }
 
 body {
-    font-family: 'Minecraft Ten', sans-serif;
-    text-align: center;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
+    font-family: 'MinecraftTen', sans-serif;
+    text-align: center;
     color: yellow;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.container {
+    margin-top: 100px;
 }
 
 .title {
-    font-size: 2.5em;
-    animation: fadeIn 2s ease-in-out;
-    text-shadow: 4px 4px 0px black;
+    font-size: 36px;
+    text-shadow: 2px 2px 10px black;
 }
 
-.server-button {
-    background: url('https://i.imgur.com/3Q4cS0W.png') no-repeat center;
-    background-size: contain;
-    width: 300px;
-    height: 80px;
-    border: none;
+.join-btn {
+    background-color: green;
+    border: 3px solid white;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background-color: darkgreen;
+}
+
+/* Скрываем IP и порт изначально */
+.server-info {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 18px;
     color: white;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px black;
-    font-family: 'Minecraft Ten', sans-serif;
 }
 
-.server-button:hover {
-    transform: scale(1.1);
-}
-
-.hidden {
-    display: none;
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: white;
-    animation: fadeIn 1s ease-in-out;
-    text-shadow: 2px 2px 0px black;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Когда показываем */
+.server-info.show {
+    opacity: 1;
+    transform: translateY(0);
 }
