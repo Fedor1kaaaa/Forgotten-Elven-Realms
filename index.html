@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FER Minecraft Server</title>
+    <title>Forgotten Elven Realms</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1 class="title">Добро пожаловать в FER!</h1>
-
-    <button class="server-button" onclick="showServerInfo()">Войти на сервер</button>
-
-    <div id="server-info" class="hidden">
-        <p><strong>IP:</strong> play.fermc.net</p>
-        <p><strong>Порт:</strong> 19132</p>
+    <div class="container">
+        <h1 class="title">Добро пожаловать в FER!</h1>
+        <button class="join-btn" onclick="showServerInfo()">Войти на сервер</button>
+        <div id="server-info" class="server-info">
+            <p>IP: yourserver.ip</p>
+            <p>Порт: 19132</p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
