@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сервер</title>
+    <title>Forgotten Elven Realms</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Добро Пожаловать на сервер!</h1>
 
-    <div class="buttons-container">
-        <button class="minecraft-btn">Войти на сервер</button>
-        <button class="minecraft-btn">Донат</button>
+    <h1>Forgotten Elven Realms</h1>
+
+    <button class="minecraft-btn" onclick="showServerInfo()">Войти на сервер</button>
+
+    <div id="server-info">
+        <p>IP: <strong>FERSR.aternos.me</strong></p>
+        <p>PORT: <strong>34148</strong></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<button class="minecraft-btn" onclick="showServerInfo()">Войти на сервер</button>
-
-<div id="server-info">
-    <p>IP: <strong>FERSR.aternos.me</strong></p>
-    <p>PORT: <strong>34148</strong></p>
-</div>
