@@ -1,10 +1,9 @@
-function showServerInfo() {
-    let info = document.getElementById("server-info");
-    info.style.display = "block";
-    info.style.opacity = "0";
-    info.style.transition = "opacity 0.5s ease-in-out";
-    
+document.addEventListener("DOMContentLoaded", function() {
+    let welcomeText = document.querySelector(".welcome-text");
+
+    // Добавляем класс с анимацией после небольшой задержки
     setTimeout(() => {
-        info.style.opacity = "1";
-    }, 100);
-}
+        welcomeText.style.opacity = "1";
+        welcomeText.style.transform = "translateY(0)";
+    }, 500);
+});
