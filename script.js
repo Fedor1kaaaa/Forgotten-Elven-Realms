@@ -1,3 +1,3 @@
 function showServerInfo() {
-    document.getElementById('server-info').classList.remove('hidden');
+    document.getElementById("server-info").classList.add("show");
 }
