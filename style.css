@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('background') no-repeat center center fixed;
     background-size: cover;
     font-family: 'MinecraftTen', sans-serif;
     text-align: center;
@@ -86,8 +86,4 @@ body {
 
 .donate-btn:hover {
     background-color: #FFC107; /* Чуть темнее при наведении */
-}
-body {
-    background: url('background.jpg') no-repeat center center fixed !important;
-    background-size: cover !important;
 }
