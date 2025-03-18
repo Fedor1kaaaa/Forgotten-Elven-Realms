@@ -95,3 +95,22 @@ body {
 .custom-btn:hover {
     background-color: #e68900;
 }
+#donateBtn {
+    background-color: #ffcc00; /* Желтый цвет */
+    color: white;
+    border: 2px solid white; /* Белая граница, как у кнопки Telegram */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Minecraft Ten", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    left: calc(20px - 120px); /* Сдвигаем левее Telegram */
+    margin-top: 10px; /* Чуть ниже IP и порта */
+    transition: 0.3s;
+}
+
+#donateBtn:hover {
+    background-color: #e6b800; /* Чуть темнее при наведении */
+    transform: scale(1.05);
+}
