@@ -2,66 +2,40 @@
     font-family: 'Minecraft Ten';
     src: url('mc-ten-lowercase-alt.ttf') format('truetype');
 }
-
 body {
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
     font-family: 'Minecraft Ten', sans-serif;
+    text-align: center;
+    background: #8B0000;
+    color: yellow;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.welcome-text {
-    font-size: 48px;
-    color: #FFD700;
-    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
-    opacity: 0;
-    animation: slideDown 1.5s ease-out forwards;
-}
-
-/* Анимация появления текста */
-@keyframes slideDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.title {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .server-button {
-    font-size: 24px;
-    background: #4CAF50;
+    background: green;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
+    font-size: 1.5em;
     border: none;
     cursor: pointer;
-    text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+    margin-top: 20px;
 }
 
 .server-button:hover {
-    background: #45a049;
+    background: darkgreen;
 }
 
-.server-info {
-    font-size: 20px;
+.hidden {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2em;
     color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
