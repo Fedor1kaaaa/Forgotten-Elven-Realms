@@ -7,3 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         welcomeText.style.transform = "translateY(0)";
     }, 500);
 });
+function showServerInfo() {
+    document.getElementById('server-info').classList.remove('hidden');
+}
