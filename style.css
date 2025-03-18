@@ -1,49 +1,20 @@
-@font-face {
-    font-family: 'Minecraft Ten';
-    src: url('MinecraftTen.ttf') format('truetype'); /* Проверь путь */
-}
-
-body {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    text-align: center;
-    font-family: 'Minecraft Ten', sans-serif;
-    color: white;
-}
-
-.welcome {
-    font-size: 36px;
-    color: white;
-}
-
-#server-btn, #telegram-btn {
-    font-size: 18px;
-    font-family: 'Minecraft Ten', sans-serif;
-    padding: 10px 20px;
-    border: 3px solid white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#server-btn {
-    background-color: #00aa00;
-    color: white;
-}
-
-#server-btn:hover {
-    background-color: #008800;
-}
-
-#server-info {
-    display: none;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-#telegram-btn {
-    background-color: #0077b5;
-    color: white;
-    margin-top: 20px;
-    font-size: 14px;
-    padding: 5px 10px;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgotten Elven Realms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Добро пожаловать в FER!</h1>
+        <button class="join-btn" onclick="showServerInfo()">Войти на сервер</button>
+        <div id="server-info" class="server-info">
+            <p>IP: yourserver.ip</p>
+            <p>Порт: 19132</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
