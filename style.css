@@ -50,7 +50,7 @@ body {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     margin-top: 20px;
     font-size: 18px;
-    color: white;
+    color: #a8e4a0;
 }
 
 /* Когда показываем */
