@@ -59,17 +59,20 @@ body {
     transform: translateY(0);
 }
 #telegramBtn {
-    background-color: #0088cc;
+    background-color: #0088cc; /* Цвет Telegram */
     color: white;
-    border: none;
-    padding: 5px 10px;
-    font-size: 14px;
+    border: 2px solid white; /* Белая граница, как у основной кнопки */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Minecraft Ten", sans-serif;
     cursor: pointer;
     position: absolute;
-    left: 20px; /* Сдвигаем левее */
-    margin-top: 10px; /* Сдвигаем ниже */
+    left: 20px; /* Левее */
+    margin-top: 10px; /* Чуть ниже айпи и порта */
+    transition: 0.3s;
 }
 
 #telegramBtn:hover {
-    background-color: #0077b5;
+    background-color: #0077b5; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
 }
