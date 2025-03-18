@@ -87,3 +87,6 @@ body {
 .donate-btn:hover {
     background-color: #FFC107; /* Чуть темнее при наведении */
 }
+body {
+    background-color: red !important;
+}
